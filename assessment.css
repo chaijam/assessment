@@ -2,7 +2,6 @@ body {
     font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro";
     background-color: #ffffd6;
     color: #660006;
-    width: 500px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -13,5 +12,5 @@ button {
     border-style: none;
 }
 input {
-    height: 20px;
+    height: 40px;
 }
