@@ -56,11 +56,11 @@ assessmentButton.onclick = () => {
     script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
     tweetDivided.appendChild(script);
 };
-userNameInput.onkeydown = event => {
-    if (event.key === 'Enter') {
-        assessmentButton.onclick();
+userNameInput.addEventListener('keydown', function(e){
+    if(e.keyCode === 13&&e.isComposing === false){
+        assessmentButton.click();
     }
-};
+},false);
 
 const answers = [
     '{userName}のいいところは声です。{userName}の特徴的な声は皆を惹きつけ、心に残ります。',
